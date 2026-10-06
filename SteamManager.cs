@@ -7,6 +7,7 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class SteamManager : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	protected static bool s_EverInitialized;
 
 	protected static SteamManager s_instance;
@@ -30,17 +31,21 @@ public class SteamManager : MonoBehaviour
 	public static bool Initialized => Instance.m_bInitialized;
 
 	[MonoPInvokeCallback(typeof(SteamAPIWarningMessageHook_t))]
+	// Rotina do componente; comportamento preservado da decompilação original.
 	protected static void SteamAPIDebugTextHook(int nSeverity, StringBuilder pchDebugText)
 	{
 		Debug.LogWarning(pchDebugText);
 	}
 
 	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+	// Rotina do componente; comportamento preservado da decompilação original.
 	private static void InitOnPlayMode()
 	{
 		s_EverInitialized = false;
 		s_instance = null;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	protected virtual void Awake()
 	{
@@ -89,6 +94,8 @@ public class SteamManager : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	protected virtual void OnEnable()
 	{
 		if (s_instance == null)
@@ -102,6 +109,8 @@ public class SteamManager : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	protected virtual void OnDestroy()
 	{
 		if (!(s_instance != this))
@@ -113,6 +122,8 @@ public class SteamManager : MonoBehaviour
 			}
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	protected virtual void Update()
 	{
