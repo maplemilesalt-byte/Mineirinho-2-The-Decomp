@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class tiro1P2 : MonoBehaviour
 {
+	// Componente de projétil/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	public bool returning;
 
 	public Transform target;
@@ -11,6 +12,8 @@ public class tiro1P2 : MonoBehaviour
 
 	private Vector3 playerposition;
 
+	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		returning = false;
@@ -18,6 +21,8 @@ public class tiro1P2 : MonoBehaviour
 		playerposition = new Vector3(target.transform.position.x, target.transform.position.y, target.transform.position.z);
 		StartCoroutine(Boom());
 	}
+
+	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -43,10 +48,14 @@ public class tiro1P2 : MonoBehaviour
 		}
 	}
 
+	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
+
 	private void OnCollisionEnter()
 	{
 		returning = true;
 	}
+
+	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
 
 	private IEnumerator Boom()
 	{
