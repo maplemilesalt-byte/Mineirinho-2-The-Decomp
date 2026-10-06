@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraOrbit : MonoBehaviour
 {
+	// Controle de câmera recuperado da Assembly-CSharp; lógica original preservada.
 	public float lookSensitivity;
 
 	public float minXLook;
@@ -14,11 +15,15 @@ public class CameraOrbit : MonoBehaviour
 
 	private float curXRot;
 
+	// Rotina da câmera; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		Cursor.lockState = CursorLockMode.Confined;
 		Cursor.visible = false;
 	}
+
+	// Rotina da câmera; comportamento preservado da decompilação original.
 
 	private void LateUpdate()
 	{
@@ -41,6 +46,8 @@ public class CameraOrbit : MonoBehaviour
 			camAnchor.eulerAngles = eulerAngles;
 		}
 	}
+
+	// Rotina da câmera; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
