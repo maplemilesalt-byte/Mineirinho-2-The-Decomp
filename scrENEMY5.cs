@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class scrENEMY5 : MonoBehaviour
 {
+	// IA/comportamento de inimigo recuperado da Assembly-CSharp; lógica original preservada.
 	public Transform closest;
 
 	public float distance;
@@ -41,6 +42,8 @@ public class scrENEMY5 : MonoBehaviour
 
 	private float progress;
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -56,6 +59,8 @@ public class scrENEMY5 : MonoBehaviour
 		PickNewRandomDestination();
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		anim.Play("ini5anime");
@@ -70,6 +75,8 @@ public class scrENEMY5 : MonoBehaviour
 			enemy5life = 0;
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void FixedUpdate()
 	{
@@ -106,6 +113,8 @@ public class scrENEMY5 : MonoBehaviour
 		}
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	public Transform getClosest()
 	{
 		Transform result = null;
@@ -123,6 +132,8 @@ public class scrENEMY5 : MonoBehaviour
 		return result;
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.tag == "Attack")
@@ -131,11 +142,15 @@ public class scrENEMY5 : MonoBehaviour
 		}
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private IEnumerator ShotCooldown()
 	{
 		yield return new WaitForSeconds(delayTiro);
 		canShoot = true;
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void PickNewRandomDestination()
 	{
