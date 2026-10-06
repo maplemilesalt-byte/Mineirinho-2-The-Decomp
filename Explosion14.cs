@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Explosion14 : MonoBehaviour
 {
+	// Componente de física/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	public float radius = 0.5f;
 
 	public float power = 5f;
@@ -9,6 +10,8 @@ public class Explosion14 : MonoBehaviour
 	public GameObject exp1;
 
 	public GameObject[] myObjects;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
