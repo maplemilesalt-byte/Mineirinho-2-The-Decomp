@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class scrEnemy3 : MonoBehaviour
 {
+	// IA/comportamento de inimigo recuperado da Assembly-CSharp; lógica original preservada.
 	public Transform closest;
 
 	public float distance;
@@ -20,6 +21,8 @@ public class scrEnemy3 : MonoBehaviour
 
 	public Rigidbody ExpINI3;
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -29,6 +32,8 @@ public class scrEnemy3 : MonoBehaviour
 		anim = enemy3Anime.GetComponent<Animation>();
 		anim["ini3sempre"].speed = Random.Range(0.8f, 1.8f);
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -45,6 +50,8 @@ public class scrEnemy3 : MonoBehaviour
 		}
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void FixedUpdate()
 	{
 		closest = getClosest();
@@ -59,6 +66,8 @@ public class scrEnemy3 : MonoBehaviour
 			}
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	public Transform getClosest()
 	{
@@ -76,6 +85,8 @@ public class scrEnemy3 : MonoBehaviour
 		}
 		return result;
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void OnCollisionEnter(Collision col)
 	{
