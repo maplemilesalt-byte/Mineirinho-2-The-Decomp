@@ -3,12 +3,17 @@ using UnityEngine.EventSystems;
 
 public class GuiFix : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	private GameObject lastselect;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
 		lastselect = new GameObject();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
