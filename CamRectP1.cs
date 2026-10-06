@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CamRectP1 : MonoBehaviour
 {
+	// Controle de câmera recuperado da Assembly-CSharp; lógica original preservada.
+	// Rotina da câmera; comportamento preservado da decompilação original.
 	private void Start()
 	{
 		if (GameManager.NumberPlayers == 1)
@@ -13,6 +15,8 @@ public class CamRectP1 : MonoBehaviour
 			Camera.main.rect = new Rect(0f, 0f, 0.5f, 1f);
 		}
 	}
+
+	// Rotina da câmera; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
