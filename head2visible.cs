@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class head2visible : MonoBehaviour
 {
+	// Componente de gameplay recuperado da Assembly-CSharp; comentários documentam sua função.
 	public GameObject Kbeca2;
+
+	// Rotina preservada da decompilação original.
 
 	private void Start()
 	{
@@ -15,6 +18,8 @@ public class head2visible : MonoBehaviour
 			Kbeca2.SetActive(value: false);
 		}
 	}
+
+	// Rotina preservada da decompilação original.
 
 	private void Update()
 	{
