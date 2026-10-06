@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class CameraGo : MonoBehaviour
 {
+	// Controle de câmera recuperado da Assembly-CSharp; lógica original preservada.
 	private Vector3 cameraDirection;
 
 	private float camDistance;
 
+	// Rotina da câmera; comportamento preservado da decompilação original.
+
 	private Vector2 cameraDistanceMinMax = new Vector2(1.5f, 10f);
 
 	public Transform cam;
+
+	// Rotina da câmera; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
@@ -16,10 +21,14 @@ public class CameraGo : MonoBehaviour
 		camDistance = cameraDistanceMinMax.y;
 	}
 
+	// Rotina da câmera; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		CheckCameraOcclusionAndCollision(cam);
 	}
+
+	// Rotina da câmera; comportamento preservado da decompilação original.
 
 	public void CheckCameraOcclusionAndCollision(Transform cam)
 	{
