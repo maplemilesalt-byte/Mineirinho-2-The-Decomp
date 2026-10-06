@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	public GameObject pauseMenu;
 
 	public bool isPaused;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
 		ResumeGame();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -37,6 +42,8 @@ public class PauseMenu : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void PauseGame()
 	{
 		pauseMenu.SetActive(value: true);
@@ -59,6 +66,8 @@ public class PauseMenu : MonoBehaviour
 			GameObject.Find("HatShotP2(Clone)").GetComponent<tiro1P2>().enabled = false;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void ResumeGame()
 	{
@@ -84,6 +93,8 @@ public class PauseMenu : MonoBehaviour
 			GameObject.Find("HatShotP2(Clone)").GetComponent<tiro1P2>().enabled = true;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void GoMenu()
 	{
