@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GrapplingGun : MonoBehaviour
 {
+	// Sistema da arma de gancho; comentários adicionados sem alterar a lógica original.
 	public LineRenderer lr;
 
 	public Vector3 grapplePoint;
@@ -25,16 +26,22 @@ public class GrapplingGun : MonoBehaviour
 
 	public AudioClip chiclesound;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Awake()
 	{
 		lr = GetComponent<LineRenderer>();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
 		lr.positionCount = 0;
 		Object.Destroy(joint);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -50,10 +57,14 @@ public class GrapplingGun : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void LateUpdate()
 	{
 		DrawRope();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void StartGrapple()
 	{
@@ -95,6 +106,8 @@ public class GrapplingGun : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void DrawRope()
 	{
 		if ((bool)joint)
@@ -104,11 +117,15 @@ public class GrapplingGun : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void StopGrapple()
 	{
 		lr.positionCount = 0;
 		Object.Destroy(joint);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private IEnumerator DelayDesconect()
 	{
