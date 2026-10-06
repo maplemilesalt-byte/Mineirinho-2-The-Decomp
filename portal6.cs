@@ -2,13 +2,19 @@ using UnityEngine;
 
 public class portal6 : MonoBehaviour
 {
+	// Componente de mundo recuperado da Assembly-CSharp; lógica original preservada.
+	// Rotina do componente; comportamento preservado da decompilação original.
 	private void Start()
 	{
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnTriggerEnter(Collider target)
 	{
