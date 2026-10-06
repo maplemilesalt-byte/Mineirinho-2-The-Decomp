@@ -5,11 +5,14 @@ namespace LowPolyWater;
 
 public class LowPolyWater : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	public float waveHeight = 0.5f;
 
 	public float waveFrequency = 0.5f;
 
 	public float waveLength = 0.75f;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	public Vector3 waveOriginPosition = new Vector3(0f, 0f, 0f);
 
@@ -19,15 +22,21 @@ public class LowPolyWater : MonoBehaviour
 
 	private Vector3[] vertices;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Awake()
 	{
 		meshFilter = GetComponent<MeshFilter>();
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		CreateMeshLowPoly(meshFilter);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private MeshFilter CreateMeshLowPoly(MeshFilter mf)
 	{
@@ -48,10 +57,14 @@ public class LowPolyWater : MonoBehaviour
 		return mf;
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		GenerateWaves();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void GenerateWaves()
 	{
