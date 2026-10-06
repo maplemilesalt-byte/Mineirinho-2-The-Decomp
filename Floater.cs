@@ -2,16 +2,21 @@ using UnityEngine;
 
 public class Floater : MonoBehaviour
 {
+	// Componente de física/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	public float buoyancy = 20f;
 
 	public float viscosity = 20f;
 
 	private Rigidbody rb;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void FixedUpdate()
 	{
@@ -28,6 +33,8 @@ public class Floater : MonoBehaviour
 			rb.velocity /= viscosity / 100f + 1f;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private Vector3 NearestVertice(Vector3 pos, Vector3[] verts)
 	{
