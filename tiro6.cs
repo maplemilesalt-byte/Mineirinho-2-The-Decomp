@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class tiro6 : MonoBehaviour
 {
+	// Componente de física/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	// Componente de projétil/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	public GameObject bullet6;
 
@@ -12,11 +13,15 @@ public class tiro6 : MonoBehaviour
 
 	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 	}
 
 	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -24,6 +29,8 @@ public class tiro6 : MonoBehaviour
 	}
 
 	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnCollisionEnter(Collision collision)
 	{
@@ -35,6 +42,8 @@ public class tiro6 : MonoBehaviour
 	}
 
 	// Rotina do projétil/efeito; comportamento preservado da decompilação original.
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private IEnumerator DelayDestroy()
 	{
