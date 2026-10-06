@@ -3,11 +3,14 @@ using UnityEngine;
 
 public class PhysicWater : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	public float waveHeight = 0.5f;
 
 	public float waveFrequency = 0.5f;
 
 	public float waveLength = 0.75f;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	public Vector3 waveOriginPosition = new Vector3(0f, 0f, 0f);
 
@@ -17,15 +20,21 @@ public class PhysicWater : MonoBehaviour
 
 	public Vector3[] vertices;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Awake()
 	{
 		meshFilter = GetComponent<MeshFilter>();
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		CreateMeshLowPoly(meshFilter);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private MeshFilter CreateMeshLowPoly(MeshFilter mf)
 	{
@@ -46,10 +55,14 @@ public class PhysicWater : MonoBehaviour
 		return mf;
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		GenerateWaves();
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	public void GenerateWaves()
 	{
@@ -67,6 +80,8 @@ public class PhysicWater : MonoBehaviour
 		mesh.MarkDynamic();
 		meshFilter.mesh = mesh;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	public float getHeightAtPosition(Vector3 position)
 	{
