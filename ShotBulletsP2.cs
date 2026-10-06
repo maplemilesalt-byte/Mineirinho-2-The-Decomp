@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ShotBulletsP2 : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	public bool canShoot;
 
 	public Transform atirador;
@@ -44,10 +45,14 @@ public class ShotBulletsP2 : MonoBehaviour
 
 	public Image hud6;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		canShoot = true;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -141,6 +146,8 @@ public class ShotBulletsP2 : MonoBehaviour
 			hud6.enabled = true;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private IEnumerator ShotCooldown()
 	{
