@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class scrEnemy6 : MonoBehaviour
 {
+	// IA/comportamento de inimigo recuperado da Assembly-CSharp; lógica original preservada.
 	public Transform closest;
 
 	public float distance;
@@ -32,6 +33,8 @@ public class scrEnemy6 : MonoBehaviour
 
 	private float progress;
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -45,6 +48,8 @@ public class scrEnemy6 : MonoBehaviour
 		progress = 0f;
 		PickNewRandomDestination();
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -60,6 +65,8 @@ public class scrEnemy6 : MonoBehaviour
 			enemy6life = 0;
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void FixedUpdate()
 	{
@@ -92,6 +99,8 @@ public class scrEnemy6 : MonoBehaviour
 		}
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	public Transform getClosest()
 	{
 		Transform result = null;
@@ -109,6 +118,8 @@ public class scrEnemy6 : MonoBehaviour
 		return result;
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.tag == "Attack")
@@ -116,6 +127,8 @@ public class scrEnemy6 : MonoBehaviour
 			enemy6life--;
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void PickNewRandomDestination()
 	{
