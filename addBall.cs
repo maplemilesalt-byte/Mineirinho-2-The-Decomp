@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class addBall : MonoBehaviour
 {
+	// Componente de gameplay recuperado da Assembly-CSharp; comentários documentam sua função.
 	public Transform addBola;
 
 	public Rigidbody bola;
@@ -11,10 +12,14 @@ public class addBall : MonoBehaviour
 
 	public bool canShoot;
 
+	// Rotina preservada da decompilação original.
+
 	private void Start()
 	{
 		canShoot = true;
 	}
+
+	// Rotina preservada da decompilação original.
 
 	private void Update()
 	{
@@ -25,6 +30,8 @@ public class addBall : MonoBehaviour
 			StartCoroutine(ShotCooldown());
 		}
 	}
+
+	// Rotina preservada da decompilação original.
 
 	private IEnumerator ShotCooldown()
 	{
