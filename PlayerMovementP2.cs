@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerMovementP2 : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	private float playerHeight = 2f;
 
 	public Transform orientation;
@@ -80,6 +81,8 @@ public class PlayerMovementP2 : MonoBehaviour
 
 	public bool isGrounded { get; private set; }
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private bool OnSlope()
 	{
 		if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight / 2f * slopeForceRayLength))
@@ -93,12 +96,16 @@ public class PlayerMovementP2 : MonoBehaviour
 		return false;
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 		rb.freezeRotation = true;
 		currentHealth = 5;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -141,6 +148,8 @@ public class PlayerMovementP2 : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void MyInput()
 	{
 		horizontalMovement = Input.GetAxisRaw("HorizontalP2");
@@ -148,10 +157,14 @@ public class PlayerMovementP2 : MonoBehaviour
 		moveDirection = orientation.forward * verticalMovement + orientation.right * horizontalMovement;
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void ControlSpeed()
 	{
 		moveSpeed = Mathf.Lerp(moveSpeed, walkSpeed, acceleration * Time.deltaTime);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void ControlDrag()
 	{
@@ -164,6 +177,8 @@ public class PlayerMovementP2 : MonoBehaviour
 			rb.drag = airDrag;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void FixedUpdate()
 	{
@@ -209,6 +224,8 @@ public class PlayerMovementP2 : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void OnCollisionEnter(Collision col)
 	{
 		if (canDamage && col.gameObject.tag == "Damage")
@@ -225,6 +242,8 @@ public class PlayerMovementP2 : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void OnTriggerEnter(Collider target)
 	{
 		if (target.tag == "Dead")
@@ -233,11 +252,15 @@ public class PlayerMovementP2 : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private IEnumerator DamageDelay()
 	{
 		yield return new WaitForSeconds(1f);
 		canDamage = true;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void PlayerDead()
 	{
@@ -252,6 +275,8 @@ public class PlayerMovementP2 : MonoBehaviour
 			dead = false;
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Anime()
 	{
