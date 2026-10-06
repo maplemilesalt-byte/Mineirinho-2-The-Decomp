@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CarryRBrot : MonoBehaviour
 {
+	// Componente de física/efeito recuperado da Assembly-CSharp; lógica original preservada.
 	private Vector3 LastPosition;
 
 	private Vector3 LastMove;
@@ -10,6 +11,8 @@ public class CarryRBrot : MonoBehaviour
 
 	private Vector3 angularVelocity;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void FixedUpdate()
 	{
 		LastMove = transform.position - LastPosition;
@@ -17,6 +20,8 @@ public class CarryRBrot : MonoBehaviour
 		angularVelocity = transform.rotation * LastEulerAngles;
 		LastEulerAngles = transform.eulerAngles;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnTriggerStay(Collider other)
 	{
