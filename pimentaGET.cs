@@ -2,18 +2,25 @@ using UnityEngine;
 
 public class pimentaGET : MonoBehaviour
 {
+	// Componente de mundo recuperado da Assembly-CSharp; lógica original preservada.
 	public GameObject pimentaP1;
 
 	public GameObject pimentaP2;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		transform.Rotate(0f, 0f, 1f);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnTriggerEnter(Collider target)
 	{
