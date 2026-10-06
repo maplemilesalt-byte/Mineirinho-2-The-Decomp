@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class movePlat : MonoBehaviour
 {
+	// Componente de mundo recuperado da Assembly-CSharp; lógica original preservada.
 	public Vector3[] points;
 
 	public int point_number;
@@ -22,6 +23,8 @@ public class movePlat : MonoBehaviour
 
 	private Vector3 lastMove;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		if (points.Length != 0)
@@ -30,6 +33,8 @@ public class movePlat : MonoBehaviour
 		}
 		tolerance = speed * Time.deltaTime;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -43,6 +48,8 @@ public class movePlat : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void MovePlatform()
 	{
 		Vector3 vector = current_target - transform.position;
@@ -54,6 +61,8 @@ public class movePlat : MonoBehaviour
 		}
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void UpdateTarget()
 	{
 		if (automatic && Time.time - delay_start > delay_time)
@@ -61,6 +70,8 @@ public class movePlat : MonoBehaviour
 			NextPlatform();
 		}
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	public void NextPlatform()
 	{
@@ -72,11 +83,15 @@ public class movePlat : MonoBehaviour
 		current_target = points[point_number];
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void FixedUpdate()
 	{
 		lastMove = transform.position - lastPosition;
 		lastPosition = transform.position;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnTriggerStay(Collider other)
 	{
