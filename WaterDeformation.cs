@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class WaterDeformation : MonoBehaviour
 {
+	// Código decompilado; comentários adicionados para documentar o comportamento original.
 	public static Mesh mesh;
 
 	public static Transform water;
@@ -14,11 +15,15 @@ public class WaterDeformation : MonoBehaviour
 
 	private Vector2 time = Vector2.zero;
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		water = transform;
 		mesh = GetComponent<MeshFilter>().mesh;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -32,6 +37,8 @@ public class WaterDeformation : MonoBehaviour
 		mesh.RecalculateNormals();
 		GetComponent<MeshFilter>().mesh = mesh;
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private Vector3 Deform(Vector3 v)
 	{
