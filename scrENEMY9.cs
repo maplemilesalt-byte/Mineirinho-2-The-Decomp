@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class scrENEMY9 : MonoBehaviour
 {
+	// IA/comportamento de inimigo recuperado da Assembly-CSharp; lógica original preservada.
 	public Transform closest;
 
 	public float distance;
@@ -29,6 +30,8 @@ public class scrENEMY9 : MonoBehaviour
 
 	public bool canShoot;
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -40,6 +43,8 @@ public class scrENEMY9 : MonoBehaviour
 		delayTiro = Random.Range(2f, 3.5f);
 		transform.localScale = new Vector3(Random.Range(1f, 2.5f), Random.Range(1f, 2.5f), Random.Range(1f, 2.5f));
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void Update()
 	{
@@ -55,6 +60,8 @@ public class scrENEMY9 : MonoBehaviour
 			enemy9life = 0;
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private void FixedUpdate()
 	{
@@ -73,6 +80,8 @@ public class scrENEMY9 : MonoBehaviour
 		}
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	public Transform getClosest()
 	{
 		Transform result = null;
@@ -90,6 +99,8 @@ public class scrENEMY9 : MonoBehaviour
 		return result;
 	}
 
+	// Rotina do inimigo; comportamento preservado da decompilação original.
+
 	private void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.tag == "Attack")
@@ -97,6 +108,8 @@ public class scrENEMY9 : MonoBehaviour
 			enemy9life--;
 		}
 	}
+
+	// Rotina do inimigo; comportamento preservado da decompilação original.
 
 	private IEnumerator ShotCooldown()
 	{
