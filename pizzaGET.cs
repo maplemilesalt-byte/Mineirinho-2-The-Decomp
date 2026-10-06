@@ -2,18 +2,25 @@ using UnityEngine;
 
 public class pizzaGET : MonoBehaviour
 {
+	// Componente de mundo recuperado da Assembly-CSharp; lógica original preservada.
 	public GameObject pizzaP1;
 
 	public GameObject pizzaP2;
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void Start()
 	{
 	}
 
+	// Rotina do componente; comportamento preservado da decompilação original.
+
 	private void Update()
 	{
 		transform.Rotate(0f, 1f, 0f);
 	}
+
+	// Rotina do componente; comportamento preservado da decompilação original.
 
 	private void OnTriggerStay(Collider target)
 	{
